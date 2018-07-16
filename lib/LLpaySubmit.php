@@ -20,7 +20,7 @@ class LLpaySubmit {
 	 *连连支付网关地址
 	 *线上地址为https://yintong.com.cn/llpayh5/payment.htm?
 	 */
-	var $llpay_gateway_new = 'https://yintong.com.cn/payment/bankgateway.htm';
+	var $llpay_gateway_new = 'https://cashier.lianlianpay.com/payment/bankgateway.htm';
 
 	function __construct($llpay_config) {
 		$this->llpay_config = $llpay_config;
@@ -99,6 +99,8 @@ class LLpaySubmit {
 	function buildRequestForm($para_temp, $method, $button_name) {
 		//待请求参数数组
 		$para = $this->buildRequestPara($para_temp);
+		//风控值去斜杠
+        $para['risk_item'] =stripslashes( $para['risk_item']);
 		$sHtml = "<form id='llpaysubmit' name='llpaysubmit' action='" . $this->llpay_gateway_new . "' method='" . $method . "'>";
 		$sHtml .= "<input type='hidden' name='version' value='" . $para['version'] . "'/>";
 		$sHtml .= "<input type='hidden' name='oid_partner' value='" . $para['oid_partner'] . "'/>";
