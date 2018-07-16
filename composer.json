@@ -3,7 +3,7 @@
     "description": "LianLianPay PHP",
     "autoload": {
         "psr-4": {
-            "LLpay\\": "lib/"
+            "LianLianPay\\": "lib/"
         },
 	"files": [
 	    "lib/llpay_core.function.php","lib/llpay_md5.function.php","lib/llpay_rsa.function.php"

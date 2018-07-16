@@ -1,4 +1,5 @@
-﻿<?php
+<?php
+namespace LianLianPay;
 
 /* *
  * 类名：LLpaySubmit
@@ -9,8 +10,8 @@
  * 说明：
  * 以下代码只是为了方便商户测试而提供的样例代码，商户可以根据自己网站的需要，按照技术文档编写,并非一定要使用该代码。
  */
-require_once ("llpay_core.function.php");
-require_once ("llpay_md5.function.php");
+//require_once ("llpay_core.function.php");
+//require_once ("llpay_md5.function.php");
 
 class LLpaySubmit {
 
