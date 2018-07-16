@@ -52,4 +52,10 @@ $llpay_config['input_charset'] = strtolower('utf-8');
 
 //访问模式,根据自己的服务器是否支持ssl访问，若支持请选择https；若不支持请选择http
 $llpay_config['transport'] = 'http';
+
+$llpay_config['notify_url'] = 'http://www.demodemodemo.com/llpay_notify';
+$llpay_config['return_url'] = 'http://www.demodemodemo.com/payment/llpay_return';
+
+$llpay_config['public_key'] = __DIR__.'/key/llpay_public_key.pem'
+
 ?>

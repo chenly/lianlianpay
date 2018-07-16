@@ -42,9 +42,9 @@ function Rsasign($data,$priKey) {
  * 验签用连连支付公钥
  * return 验签是否通过 bool值
  */
-function Rsaverify($data, $sign)  {
+function Rsaverify($data, $sign, $public_key)  {
 	//读取连连支付公钥文件
-	$pubKey = file_get_contents('key/llpay_public_key.pem');
+	$pubKey = file_get_contents($public_key);
 
 	//转换为openssl格式密钥
     $res = openssl_get_publickey($pubKey);
