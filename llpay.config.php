@@ -56,6 +56,10 @@ $llpay_config['transport'] = 'http';
 $llpay_config['notify_url'] = 'http://www.demodemodemo.com/llpay_notify';
 $llpay_config['return_url'] = 'http://www.demodemodemo.com/payment/llpay_return';
 
-$llpay_config['public_key'] = __DIR__.'/key/llpay_public_key.pem';
+$llpay_config['public_key'] = '-----BEGIN PUBLIC KEY-----
+MIGfMA09CSqGSIb3DQEBAQUAA4GNADCBi6KBgQCSS/DiwdCf/aZsxxcacDnooGph3d2JOj5GXWi+
+q3gznZauZjkNP8SKl3J2liP0O6rU/Y/29+IUe+GTMhMOFJuZm0htAtKiu5ekW0GlBMWxf4FPkYlQ
+kPE0FtaoMP3gYfh+OwI+fIRrpW3ySn3mScnc6Z700nU/VYrRkfcSCbSnRwIDAQAB
+-----END PUBLIC KEY-----';
 
 ?>
