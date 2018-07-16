@@ -56,6 +56,7 @@ $llpay_config['transport'] = 'http';
 $llpay_config['notify_url'] = 'http://www.demodemodemo.com/llpay_notify';
 $llpay_config['return_url'] = 'http://www.demodemodemo.com/payment/llpay_return';
 
+//连连支付公钥 不需修改除非官方通知
 $llpay_config['llpay_public_key'] = '-----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSS/DiwdCf/aZsxxcacDnooGph3d2JOj5GXWi+
 q3gznZauZjkNP8SKl3J2liP0O6rU/Y/29+IUe+GTMhMOFJuZm1htAtKiu5ekW0GlBMWxf4FPkYlQ
