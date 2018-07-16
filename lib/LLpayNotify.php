@@ -39,8 +39,8 @@ class LLpayNotify {
 			$is_notify = true;
 			//include_once ('llpay_cls_json.php');
 			//$json = new JSON;
-			$str = json_decode(file_get_contents("php://input"));
-			$val = $json->decode($str);
+			$val = json_decode(file_get_contents("php://input"));
+			//$val = $json->decode($str);
 			$oid_partner = getJsonVal($val,'oid_partner' );
 			$sign_type = getJsonVal($val,'sign_type' );
 			$sign = getJsonVal($val,'sign' );
