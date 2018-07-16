@@ -42,12 +42,11 @@ function Rsasign($data,$priKey) {
  * 验签用连连支付公钥
  * return 验签是否通过 bool值
  */
-function Rsaverify($data, $sign, $public_key){
+function Rsaverify($data, $sign, $LL_pubKey){
 	//读取连连支付公钥文件
-	//$pubKey = file_get_contents($public_key);
-
+	//$pubKey = file_get_contents($pubKey);
 	//转换为openssl格式密钥
-    $res = openssl_get_publickey($public_key);
+    $res = openssl_get_publickey($LL_pubKey);
 
 	//调用openssl内置方法验签，返回bool值
     $result = (bool)openssl_verify($data, base64_decode($sign), $res,OPENSSL_ALGO_MD5);
